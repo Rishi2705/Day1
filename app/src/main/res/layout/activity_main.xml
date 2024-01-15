@@ -1,0 +1,93 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backand"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        android:text="Homies"
+        android:textAlignment="center"
+        android:layout_marginLeft="50dp"
+        android:textSize="30dp"
+
+
+        />
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:layout_marginLeft="120dp"
+        android:text="Sign In / Login"
+
+        android:background="#FFEB3B"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/baseline_account_circle_24"
+        />
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="12"
+        android:inputType="text"
+        android:hint="gmail id"
+        android:layout_marginLeft="90dp"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/key_solid"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:layout_marginLeft="90dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="sign in / Login"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#050404"
+        android:layout_marginLeft="130dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="#FFC107"
+        android:text="New user ?"
+        android:textColor="#000000"
+        />
+
+
+
+
+
+
+</LinearLayout>
