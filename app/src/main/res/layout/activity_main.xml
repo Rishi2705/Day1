@@ -9,76 +9,91 @@
     android:background="@drawable/backand"
 
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/first"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:padding="20dp"
+        android:padding="70dp"
         android:text="Homies"
+        android:typeface="serif"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:layout_marginLeft="50dp"
         android:textSize="30dp"
 
 
         />
-    <TextView
+    <Button
         android:id="@+id/second"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:textAlignment="center"
-        android:padding="15dp"
         android:layout_marginLeft="120dp"
         android:text="Sign In / Login"
-
-        android:background="#FFEB3B"
-        />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/baseline_account_circle_24"
-        />
-    
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:ems="12"
-        android:inputType="text"
-        android:hint="gmail id"
-        android:layout_marginLeft="90dp"/>
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/key_solid"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="12"
-        android:inputType="textPassword"
-        android:hint="password"
-        android:layout_marginLeft="90dp"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="sign in / Login"
         android:backgroundTint="#FFEB3B"
-        android:textColor="#050404"
-        android:layout_marginLeft="130dp"/>
+        android:textColor="@color/black"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="25dp"
+        android:backgroundTint="#85FFFFFF">
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/baseline_account_circle_24"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="12"
+                android:inputType="text"
+                android:hint="gmail id"
+                android:layout_margin="15dp"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/key_solid"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#EAB61A"
+                android:text="sign in / Login"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="150dp"
         android:backgroundTint="#FFC107"
         android:text="New user ?"
