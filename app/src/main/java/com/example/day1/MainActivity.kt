@@ -17,14 +17,14 @@ class MainActivity : AppCompatActivity() {
         btn1.setOnClickListener {
             val str = input1.text.toString()
             val str1 = input2.text.toString()
-            val si = Intent(this,MainActivity3::class.java).putExtra("inputx",str)
-            val ed = Intent(this,MainActivity3::class.java).putExtra("inputy",str1)
+            val si = Intent(this,MainActivity2::class.java).putExtra("inputx",str)
+            val ed = Intent(this,MainActivity2::class.java).putExtra("inputy",str1)
             startActivity(si)
             startActivity(ed)
             finish()
         }
         btn2.setOnClickListener {
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this,MainActivity3::class.java)
             startActivity(intent)
         }
     }
